@@ -11,7 +11,6 @@ function getTime() {
 }
 
 function init() {
-  getTime();
   setInterval(getTime, 1000); // increate time by a second
 }
 
