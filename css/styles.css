@@ -1,6 +1,17 @@
 body {
   background-color: rgb(216, 152, 152);
+  color : white;
 }
+
+.box{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
 .form,
 .greetings {
   display: none;
@@ -27,4 +38,30 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.js-toDoList li{
+  font-size: 16px;
+}
+
+.js-weather{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 25px;
+  background-color: blue;
+  opacity: 0.5;
+  border-radius: 15px;
+  padding: 10px;
+}
+.js-title{
+  font-size: 80px;
+}
+
+input{ 
+  opacity: 0.9;
+  border-radius: 15px;
+  height: 20px;
+  width: 150px;
+  margin-bottom: 10px;
 }

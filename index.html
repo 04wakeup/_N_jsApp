@@ -7,23 +7,32 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="js-clock">
-      <h1 class="js-title">00:00</h1>
+    <div class="box">
+      <!-- 1. Clock -->
+      <div class="js-clock">
+        <h1 class="js-title">00:00</h1>
+      </div>
+  
+      <!-- 2. Input Name -->
+      <form action="" class="js-form form">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+  
+      <!-- 3. Display Name -->
+      <h2 class="js-greetings greetings"></h4>
+  
+        <!-- 4. Input ToDo List  -->
+      <form class="js-toDoForm">
+        <input type="text" placeholder="Write a to do" />
+      </form>
+  
+      <!-- 5. Display ToDo List -->
+      <ul class="js-toDoList"></ul>
+
     </div>
-
-    <form action="" class="js-form form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-
-    <h4 class="js-greetings greetings"></h4>
-
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-
-    <ul class="js-toDoList"></ul>
-
-    <span class="js-weather"> </span>
+        <!--  6. Display Weather and Geolocation Info-->
+        <span class="js-weather"> </span>
+        
   </body>
   <script src="clock.js"></script>
   <script src="greeting.js"></script>
