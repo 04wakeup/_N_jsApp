@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Task Management</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
   </head>
   <body>
     <div class="box">
@@ -21,18 +22,26 @@
       <!-- 3. Display Name -->
       <h2 class="js-greetings greetings"></h4>
   
-        <!-- 4. Input ToDo List  -->
-      <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do" />
-      </form>
-  
-      <!-- 5. Display ToDo List -->
-      <ul class="js-toDoList"></ul>
-
-    </div>
-        <!--  6. Display Weather and Geolocation Info-->
+        <form class="js-toDoForm">
+          <input type="text" placeholder="Add Task" />
+        </form>
+    
+        <div class="toDoList">
+          <div class="left">
+            <h2>Pending</h2>
+          <ul class="js-toDoList"></ul>
+          </div>
+          <div class="right">
+            <h2>Finished</h2>
+            <ul class="js-doneDoList"></ul>   
+           </div>
+          </div>
+        </div>
+   
+       
+        <!--  6. Display Weather and Geolocation Info..-->
         <span class="js-weather"> </span>
-        
+
   </body>
   <script src="clock.js"></script>
   <script src="greeting.js"></script>
